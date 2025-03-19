@@ -1,0 +1,172 @@
+id,zone,municipality,area,station,eoi,type,component,fromTime,toTime,value,unit,latitude,longitude,timestep,index,color,isValid,isVisible
+697,Utenfor sonesystemet,Svalbard,Zeppelinfjellet,Zeppelinfjellet,NO0042R,Bakgrunnsstasjon,O3,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,57.0,µg/m³,78.90669,11.88899,3600,1,6ee86e,True,True
+2995,Troms og Finnmark,Sør-Varanger,Sør-Varanger,Svanvik,NO0047R,Bakgrunnsstasjon,O3,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,87.828,µg/m³,69.45505,30.04075,3600,1,6ee86e,True,True
+3074,Stor-Oslo,Oslo,Oslo,Sofienbergparken,NO0073A,Bybakgrunnsstasjon,O3,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,76.298778,µg/m³,59.92305,10.76574,3600,1,6ee86e,True,True
+2910,Bergen,Bergen,Bergen,Klosterhaugen,NO0120A,Bybakgrunnsstasjon,O3,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,77.845,µg/m³,60.395929,5.312674,3600,1,6ee86e,True,True
+745,Øst og Sørlandet,Grenland,Grenland,Haukenes,NO0062A,Bakgrunnsstasjon,O3,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,85.6,µg/m³,59.20243,9.4871,3600,1,6ee86e,True,True
+698,Midt-Norge og Nordland,Hemnes,Tustervatn,Tustervatn,NO0015R,Bakgrunnsstasjon,O3,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,83.2,µg/m³,65.83089,13.90655,3600,1,6ee86e,True,True
+695,Midt-Norge og Nordland,Sunndal,Kårvatn,Kårvatn,NO0039R,Bakgrunnsstasjon,O3,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,72.6,µg/m³,62.78246,8.87658,3600,1,6ee86e,True,True
+1087,Øst og Sørlandet,Hurdal,Hurdal,Hurdal25,NO0056R,Bakgrunnsstasjon,O3,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,89.6,µg/m³,60.37239,11.07816,3600,1,6ee86e,True,True
+696,Øst og Sørlandet,Halden,Prestebakke,Prestebakke,NO0043R,Bakgrunnsstasjon,O3,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,75.428,µg/m³,58.99652,11.52767,3600,1,6ee86e,True,True
+699,Vestlandet,Karmøy,Sandve,Sandve,NO0052R,Bakgrunnsstasjon,O3,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,82.2,µg/m³,59.19722,5.20148,3600,1,6ee86e,True,True
+1214,Øst og Sørlandet,Birkenes,Birkenes,Birkenesobservatoriet,NO0002R,Bakgrunnsstasjon,O3,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,82.2,µg/m³,58.38846,8.2519,3600,1,6ee86e,True,True
+3112,Stor-Oslo,Bærum,Bærum,Bærum Golfklubb,NO0133A,Bakgrunnsstasjon,O3,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,89.3,µg/m³,59.96018,10.49023,3600,1,6ee86e,True,True
+1119,Stor-Oslo,Oslo,Oslo,Sofienbergparken,NO0073A,Bybakgrunnsstasjon,PM2.5,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,5.769104,µg/m³,59.92305,10.76574,3600,1,6ee86e,True,True
+933,Stor-Oslo,Oslo,Oslo,Smestad,NO0095A,Veinær stasjon,PM2.5,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,11.148451,µg/m³,59.9325,10.66987,3600,1,6ee86e,True,True
+2951,Øst og Sørlandet,Lørenskog,Lørenskog,Solheim,NO0129A,Veinær stasjon,PM2.5,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,14.005,µg/m³,59.928612,10.953203,3600,1,6ee86e,True,True
+2961,Øst og Sørlandet,Fredrikstad,Fredrikstad,Nygaardsgata,NO0105A,Bybakgrunnsstasjon,PM2.5,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,1.772683,µg/m³,59.210191,10.940097,3600,1,6ee86e,True,True
+2965,Troms og Finnmark,Harstad,Harstad,Seljestad Rv83,NO0127A,Veinær stasjon,PM2.5,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,2.657083,µg/m³,68.79222701,16.53742346,3600,1,6ee86e,True,True
+2992,Midt-Norge og Nordland,N/A,Bodø,Olav V gate,NO0126A,Veinær stasjon,PM2.5,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,2.571047,µg/m³,67.275501,14.419057,3600,1,6ee86e,True,True
+2946,Stor-Oslo,Oslo,Oslo,E6 Alna senter,NO0122A,Veinær stasjon,PM2.5,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,30.509444,µg/m³,59.92556,10.850367,3600,2,ff9900,True,True
+2324,Stor-Oslo,Bærum,Bærum,Bekkestua,NO0114A,Bybakgrunnsstasjon,PM2.5,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,6.1,µg/m³,59.91822,10.58393,3600,1,6ee86e,True,True
+2963,Midt-Norge og Nordland,Rana,Mo i Rana,Moheia Vest,NO0123A,Industripåvirket stasjon,PM2.5,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,1.923017,µg/m³,66.312191,14.149923,3600,1,6ee86e,True,True
+3179,Vestlandet,Stavanger,Stavanger,Vågen,NO0141A,Bybakgrunnsstasjon,PM2.5,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,4.434222,µg/m³,58.9726488545842,5.72649786093436,3600,1,6ee86e,True,True
+3018,Vestlandet,Stavanger,Stavanger,Schancheholen,NO0125A,Veinær stasjon,PM2.5,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,8.321111,µg/m³,58.951877,5.721875,3600,1,6ee86e,True,True
+2727,Øst og Sørlandet,Grenland,Grenland,Knarrdalstranda,NO0118A,Bybakgrunnsstasjon,PM2.5,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,3.675575,µg/m³,59.13354,9.6219,3600,1,6ee86e,True,True
+2973,Øst og Sørlandet,Tønsberg,Tønsberg,Nedre Langgate,NO0128A,Veinær stasjon,PM2.5,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,6.313661,µg/m³,59.263725,10.411165,3600,1,6ee86e,True,True
+3061,Trondheim,Trondheim,Trondheim,Omkjøringsvegen,NO0145A,Veinær stasjon,PM2.5,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,6.117361,µg/m³,63.410491,10.444352,3600,1,6ee86e,True,True
+2472,Øst og Sørlandet,Grenland,Grenland,Furulund,NO0115A,Industripåvirket stasjon,PM2.5,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,8.371642,µg/m³,59.057304,9.695568,3600,1,6ee86e,True,True
+2889,Bergen,Bergen,Bergen,Rådal,NO0121A,Veinær stasjon,PM2.5,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,5.782314,µg/m³,60.294268,5.324619,3600,1,6ee86e,True,True
+2903,Bergen,Bergen,Bergen,Klosterhaugen,NO0120A,Bybakgrunnsstasjon,PM2.5,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,3.364736,µg/m³,60.395929,5.312674,3600,1,6ee86e,True,True
+3001,Øst og Sørlandet,N/A,Brumunddal,Ringsakervegen,NO0130A,Veinær stasjon,PM2.5,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,14.5,µg/m³,60.88593,10.93785,3600,1,6ee86e,True,True
+2702,Øst og Sørlandet,Elverum,Elverum,Leiret,NO0119A,Veinær stasjon,PM2.5,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,13.103453,µg/m³,60.883643,11.559301,3600,1,6ee86e,True,True
+2065,Øst og Sørlandet,Sarpsborg,Sarpsborg,Alvim,NO0110A,Veinær stasjon,PM2.5,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,3.515,µg/m³,59.27377544,11.08919017,3600,1,6ee86e,True,True
+53,Vestlandet,Stavanger,Stavanger,Våland,NO0065A,Bybakgrunnsstasjon,PM2.5,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,4.952494,µg/m³,58.96165,5.7314,3600,1,6ee86e,True,True
+1531,Trondheim,Trondheim,Trondheim,E6-Tiller,NO0102A,Veinær stasjon,PM2.5,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,8.13202,µg/m³,63.35761,10.37174,3600,1,6ee86e,True,True
+47,Vestlandet,Stavanger,Stavanger,Kannik,NO0076A,Veinær stasjon,PM2.5,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,8.076194,µg/m³,58.96422,5.72786,3600,1,6ee86e,True,True
+1657,Øst og Sørlandet,Fredrikstad,Fredrikstad,St.Croix,NO0084A,Veinær stasjon,PM2.5,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,4.318365,µg/m³,59.21028,10.94535,3600,1,6ee86e,True,True
+1686,Trondheim,Trondheim,Trondheim,Elgeseter,NO0060A,Veinær stasjon,PM2.5,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,2.016535,µg/m³,63.419239,10.395945,3600,1,6ee86e,True,True
+913,Stor-Oslo,Oslo,Oslo,Bygdøy Alle,NO0083A,Veinær stasjon,PM2.5,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,18.3,µg/m³,59.9193,10.69651,3600,1,6ee86e,True,True
+1665,Øst og Sørlandet,Gjøvik,Gjøvik,"Minnesundvegen, Gjøvik",NO0103A,Veinær stasjon,PM2.5,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,23.696569,µg/m³,60.79089,10.6967,3600,1,6ee86e,True,True
+614,Øst og Sørlandet,Lillehammer,Lillehammer,Lillehammer barnehage,NO0075A,Bybakgrunnsstasjon,PM2.5,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,4.727639,µg/m³,61.12087,10.46563,3600,1,6ee86e,True,True
+13,Bergen,Bergen,Bergen,Danmarks plass,NO0059A,Veinær stasjon,PM2.5,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,4.869017,µg/m³,60.37408,5.34042,3600,1,6ee86e,True,True
+39,Stor-Oslo,Oslo,Oslo,Manglerud,NO0071A,Veinær stasjon,PM2.5,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,8.6,µg/m³,59.89864,10.8149,3600,1,6ee86e,True,True
+2068,Bergen,Bergen,Bergen,Loddefjord,NO0109A,Veinær stasjon,PM2.5,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,7.119406,µg/m³,60.361135,5.23686,3600,1,6ee86e,True,True
+2070,Bergen,Bergen,Bergen,"Rolland, Åsane",NO0108A,Bybakgrunnsstasjon,PM2.5,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,3.130953,µg/m³,60.462665,5.332447,3600,1,6ee86e,True,True
+873,Troms og Finnmark,Tromsø,Tromsø,Hansjordnesbukta,NO0079A,Veinær stasjon,PM2.5,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,4.113333,µg/m³,69.65625,18.96372,3600,1,6ee86e,True,True
+613,Øst og Sørlandet,Lillehammer,Lillehammer,Bankplassen,NO0074A,Veinær stasjon,PM2.5,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,3.365694,µg/m³,61.11295,10.46487,3600,1,6ee86e,True,True
+813,Øst og Sørlandet,Grenland,Grenland,Lensmannsdalen,NO0061A,Veinær stasjon,PM2.5,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,4.1,µg/m³,59.1593,9.63573,3600,1,6ee86e,True,True
+1222,Øst og Sørlandet,Moss,Moss,Kransen,NO0112A,Veinær stasjon,PM2.5,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,25.123889,µg/m³,59.433471,10.66176236,3600,1,6ee86e,True,True
+1040,Stor-Oslo,Oslo,Oslo,Hjortnes,NO0093A,Veinær stasjon,PM2.5,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,4.3,µg/m³,59.91126,10.70398,3600,1,6ee86e,True,True
+4710,Stor-Oslo,Oslo,Oslo,Brynbanen,NO0149A,Bybakgrunnsstasjon,PM2.5,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,3.41837,µg/m³,59.9156,10.82517,3600,1,6ee86e,True,True
+4761,Stor-Oslo,Oslo,Oslo,Ring 3 Økern,NO0150A,Veinær stasjon,PM2.5,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,30.959944,µg/m³,59.928454,10.801863,3600,2,ff9900,True,True
+4771,Øst og Sørlandet,Hamar,Hamar,Vangsvegen-Disen,NO0151A,Veinær stasjon,PM2.5,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,15.657798,µg/m³,60.796459,11.096757,3600,1,6ee86e,True,True
+4788,Stor-Oslo,Oslo,Oslo,Langkaia,NO0152A,Industripåvirket stasjon,PM2.5,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,11.712253,µg/m³,59.908256,10.749474,3600,1,6ee86e,True,True
+4834,Stor-Oslo,Oslo,Oslo,Rv4 Linderud senter,NO0155A,Veinær stasjon,PM2.5,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,6.649178,µg/m³,59.943792,10.834621,3600,1,6ee86e,True,True
+4791,Stor-Oslo,Drammen,Drammen,Bangeløkka,NO0067A,Veinær stasjon,PM2.5,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,10.347336,µg/m³,59.73327,10.21167,3600,1,6ee86e,True,True
+4840,Øst og Sørlandet,Kristiansand,Kristiansand,Fiskå,NO0156A,Industripåvirket stasjon,PM2.5,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,7.383065,µg/m³,58.12543,7.96635,3600,1,6ee86e,True,True
+3127,Stor-Oslo,Drammen,Drammen,Backeparken,NO0135A,Bybakgrunnsstasjon,PM2.5,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,7.8,µg/m³,59.749526,10.165301,3600,1,6ee86e,True,True
+3135,Stor-Oslo,Oslo,Oslo,Skøyen,NO0072A,Bybakgrunnsstasjon,PM2.5,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,10.435528,µg/m³,59.91975,10.68973,3600,1,6ee86e,True,True
+3170,Stor-Oslo,Oslo,Oslo,Spikersuppa,NO0140A,Bybakgrunnsstasjon,PM2.5,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,4.11063,µg/m³,59.914051,10.735978,3600,1,6ee86e,True,True
+3125,Stor-Oslo,Drammen,Drammen,Vårveien,NO0136A,Veinær stasjon,PM2.5,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,17.0,µg/m³,59.753618,10.144397,3600,1,6ee86e,True,True
+4796,Stor-Oslo,Bærum,Bærum,E18 Høvik stasjon,NO0153A,Veinær stasjon,PM2.5,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,29.7,µg/m³,59.901395,10.588389,3600,1,6ee86e,True,True
+3136,Øst og Sørlandet,Kristiansand,Kristiansand,Bjørndalssletta,NO0134A,Veinær stasjon,PM2.5,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,13.83427,µg/m³,58.16232369,8.02377464,3600,1,6ee86e,True,True
+3137,Øst og Sørlandet,Kristiansand,Kristiansand,Stener Heyerdahl,NO0063A,Bybakgrunnsstasjon,PM2.5,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,4.073964,µg/m³,58.14888,7.99183,3600,1,6ee86e,True,True
+3143,Trondheim,Trondheim,Trondheim,Åsveien skole,NO0139A,Veinær stasjon,PM2.5,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,-0.426361,µg/m³,63.415358,10.368372,3600,1,6ee86e,True,True
+941,Stor-Oslo,Oslo,Oslo,Alnabru,NO0057A,Veinær stasjon,PM2.5,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,7.138607,µg/m³,59.92769,10.84655,3600,1,6ee86e,True,True
+4722,Midt-Norge og Nordland,Narvik,Narvik,Kongens gate,NO0148A,Veinær stasjon,PM2.5,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,2.448722,µg/m³,68.4354123,17.4249127,3600,1,6ee86e,True,True
+2363,Øst og Sørlandet,Grenland,Grenland,Furulund,NO0115A,Industripåvirket stasjon,SO2,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,1.498751,µg/m³,59.057304,9.695568,3600,1,6ee86e,True,True
+1499,Øst og Sørlandet,Lillesand,Lillesand,Holta,NO0100A,Industripåvirket stasjon,SO2,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,-0.809758,µg/m³,58.25602,8.35935,3600,1,6ee86e,True,True
+1220,Øst og Sørlandet,Sarpsborg,Sarpsborg,Vollgata,NO0098A,Industripåvirket stasjon,SO2,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,5.396087,µg/m³,59.279,11.12217,3600,1,6ee86e,True,True
+3078,Stor-Oslo,Oslo,Oslo,Sofienbergparken,NO0073A,Bybakgrunnsstasjon,SO2,2025-03-19T10:00:00+01:00,2025-03-19T11:00:00+01:00,0.414333,µg/m³,59.92305,10.76574,3600,1,6ee86e,True,True
+3080,Øst og Sørlandet,Kristiansand,Kristiansand,Konsul Wilds vei,NO0137A,Industripåvirket stasjon,SO2,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,0.522431,µg/m³,58.129297,7.972886,3600,1,6ee86e,True,True
+3201,Stor-Oslo,Oslo,Oslo,Oslo Rådhus,NO0144A,Bybakgrunnsstasjon,SO2,2025-03-19T10:00:00+01:00,2025-03-19T11:00:00+01:00,1.0,µg/m³,59.912185,10.733669,3600,1,6ee86e,True,True
+392,Troms og Finnmark,Tromsø,Tromsø,Hansjordnesbukta,NO0079A,Veinær stasjon,PM10,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,6.840167,µg/m³,69.65625,18.96372,3600,1,6ee86e,True,True
+552,Stor-Oslo,Oslo,Oslo,Sofienbergparken,NO0073A,Bybakgrunnsstasjon,PM10,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,22.889456,µg/m³,59.92305,10.76574,3600,1,6ee86e,True,True
+2950,Øst og Sørlandet,Lørenskog,Lørenskog,Solheim,NO0129A,Veinær stasjon,PM10,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,92.570694,µg/m³,59.928612,10.953203,3600,2,ff9900,True,True
+2952,Midt-Norge og Nordland,Rana,Mo i Rana,Moheia Vest,NO0123A,Industripåvirket stasjon,PM10,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,3.156797,µg/m³,66.312191,14.149923,3600,1,6ee86e,True,True
+2964,Troms og Finnmark,Harstad,Harstad,Seljestad Rv83,NO0127A,Veinær stasjon,PM10,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,4.529444,µg/m³,68.79222701,16.53742346,3600,1,6ee86e,True,True
+2991,Midt-Norge og Nordland,N/A,Bodø,Olav V gate,NO0126A,Veinær stasjon,PM10,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,5.252411,µg/m³,67.275501,14.419057,3600,1,6ee86e,True,True
+2945,Stor-Oslo,Oslo,Oslo,E6 Alna senter,NO0122A,Veinær stasjon,PM10,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,194.75375,µg/m³,59.92556,10.850367,3600,3,ff0000,True,True
+2972,Øst og Sørlandet,Tønsberg,Tønsberg,Nedre Langgate,NO0128A,Veinær stasjon,PM10,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,37.569367,µg/m³,59.263725,10.411165,3600,1,6ee86e,True,True
+2957,Troms og Finnmark,Tromsø,Tromsø,Rambergan,NO0124A,Bybakgrunnsstasjon,PM10,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,5.650333,µg/m³,69.65428,18.95636,3600,1,6ee86e,True,True
+2723,Øst og Sørlandet,Grenland,Grenland,Knarrdalstranda,NO0118A,Bybakgrunnsstasjon,PM10,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,25.187833,µg/m³,59.13354,9.6219,3600,1,6ee86e,True,True
+2071,Bergen,Bergen,Bergen,"Rolland, Åsane",NO0108A,Bybakgrunnsstasjon,PM10,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,6.942167,µg/m³,60.462665,5.332447,3600,1,6ee86e,True,True
+3017,Vestlandet,Stavanger,Stavanger,Schancheholen,NO0125A,Veinær stasjon,PM10,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,26.051528,µg/m³,58.951877,5.721875,3600,1,6ee86e,True,True
+3178,Vestlandet,Stavanger,Stavanger,Vågen,NO0141A,Bybakgrunnsstasjon,PM10,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,8.113444,µg/m³,58.9726488545842,5.72649786093436,3600,1,6ee86e,True,True
+3060,Trondheim,Trondheim,Trondheim,Omkjøringsvegen,NO0145A,Veinær stasjon,PM10,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,8.661528,µg/m³,63.410491,10.444352,3600,1,6ee86e,True,True
+1039,Stor-Oslo,Oslo,Oslo,Hjortnes,NO0093A,Veinær stasjon,PM10,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,35.75,µg/m³,59.91126,10.70398,3600,1,6ee86e,True,True
+2701,Øst og Sørlandet,Elverum,Elverum,Leiret,NO0119A,Veinær stasjon,PM10,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,85.584381,µg/m³,60.883643,11.559301,3600,2,ff9900,True,True
+2888,Bergen,Bergen,Bergen,Rådal,NO0121A,Veinær stasjon,PM10,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,26.654361,µg/m³,60.294268,5.324619,3600,1,6ee86e,True,True
+2473,Øst og Sørlandet,Grenland,Grenland,Furulund,NO0115A,Industripåvirket stasjon,PM10,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,28.603836,µg/m³,59.057304,9.695568,3600,1,6ee86e,True,True
+2902,Bergen,Bergen,Bergen,Klosterhaugen,NO0120A,Bybakgrunnsstasjon,PM10,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,7.824056,µg/m³,60.395929,5.312674,3600,1,6ee86e,True,True
+3000,Øst og Sørlandet,N/A,Brumunddal,Ringsakervegen,NO0130A,Veinær stasjon,PM10,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,153.6,µg/m³,60.88593,10.93785,3600,3,ff0000,True,True
+1664,Øst og Sørlandet,Gjøvik,Gjøvik,"Minnesundvegen, Gjøvik",NO0103A,Veinær stasjon,PM10,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,178.812229,µg/m³,60.79089,10.6967,3600,3,ff0000,True,True
+52,Vestlandet,Stavanger,Stavanger,Våland,NO0065A,Bybakgrunnsstasjon,PM10,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,17.397792,µg/m³,58.96165,5.7314,3600,1,6ee86e,True,True
+1231,Øst og Sørlandet,Grenland,Grenland,Sverresgate,NO0106A,Veinær stasjon,PM10,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,18.15,µg/m³,59.13816,9.6522,3600,1,6ee86e,True,True
+1653,Øst og Sørlandet,Fredrikstad,Fredrikstad,Nygaardsgata,NO0105A,Bybakgrunnsstasjon,PM10,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,6.194578,µg/m³,59.210191,10.940097,3600,1,6ee86e,True,True
+934,Stor-Oslo,Oslo,Oslo,Smestad,NO0095A,Veinær stasjon,PM10,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,125.608038,µg/m³,59.9325,10.66987,3600,3,ff0000,True,True
+967,Øst og Sørlandet,Fredrikstad,Fredrikstad,St.Croix,NO0084A,Veinær stasjon,PM10,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,27.521448,µg/m³,59.21028,10.94535,3600,1,6ee86e,True,True
+1685,Trondheim,Trondheim,Trondheim,Elgeseter,NO0060A,Veinær stasjon,PM10,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,5.478906,µg/m³,63.419239,10.395945,3600,1,6ee86e,True,True
+352,Stor-Oslo,Oslo,Oslo,Skøyen,NO0072A,Bybakgrunnsstasjon,PM10,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,68.443797,µg/m³,59.91975,10.68973,3600,2,ff9900,True,True
+713,Øst og Sørlandet,Grenland,Grenland,Lensmannsdalen,NO0061A,Veinær stasjon,PM10,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,82.72,µg/m³,59.1593,9.63573,3600,2,ff9900,True,True
+1221,Øst og Sørlandet,Moss,Moss,Kransen,NO0112A,Veinær stasjon,PM10,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,229.575,µg/m³,59.433471,10.66176236,3600,3,ff0000,True,True
+2064,Øst og Sørlandet,Sarpsborg,Sarpsborg,Alvim,NO0110A,Veinær stasjon,PM10,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,12.856806,µg/m³,59.27377544,11.08919017,3600,1,6ee86e,True,True
+2067,Bergen,Bergen,Bergen,Loddefjord,NO0109A,Veinær stasjon,PM10,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,43.022433,µg/m³,60.361135,5.23686,3600,1,6ee86e,True,True
+11,Bergen,Bergen,Bergen,Danmarks plass,NO0059A,Veinær stasjon,PM10,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,22.913881,µg/m³,60.37408,5.34042,3600,1,6ee86e,True,True
+432,Midt-Norge og Nordland,Ålesund,Ålesund,Grimmerhaugen,NO0070A,Bybakgrunnsstasjon,PM10,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,8.851333,µg/m³,62.47217,6.15682,3600,1,6ee86e,True,True
+539,Øst og Sørlandet,Lillehammer,Lillehammer,Bankplassen,NO0074A,Veinær stasjon,PM10,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,18.580417,µg/m³,61.11295,10.46487,3600,1,6ee86e,True,True
+544,Øst og Sørlandet,Lillehammer,Lillehammer,Lillehammer barnehage,NO0075A,Bybakgrunnsstasjon,PM10,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,37.658333,µg/m³,61.12087,10.46563,3600,1,6ee86e,True,True
+38,Stor-Oslo,Oslo,Oslo,Manglerud,NO0071A,Veinær stasjon,PM10,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,100.76,µg/m³,59.89864,10.8149,3600,2,ff9900,True,True
+41,Stor-Oslo,Oslo,Oslo,Alnabru,NO0057A,Veinær stasjon,PM10,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,113.32409,µg/m³,59.92769,10.84655,3600,2,ff9900,True,True
+192,Øst og Sørlandet,Kristiansand,Kristiansand,Stener Heyerdahl,NO0063A,Bybakgrunnsstasjon,PM10,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,14.826767,µg/m³,58.14888,7.99183,3600,1,6ee86e,True,True
+2325,Stor-Oslo,Bærum,Bærum,Bekkestua,NO0114A,Bybakgrunnsstasjon,PM10,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,38.9,µg/m³,59.91822,10.58393,3600,1,6ee86e,True,True
+1530,Trondheim,Trondheim,Trondheim,E6-Tiller,NO0102A,Veinær stasjon,PM10,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,12.64741,µg/m³,63.35761,10.37174,3600,1,6ee86e,True,True
+793,Stor-Oslo,Oslo,Oslo,Bygdøy Alle,NO0083A,Veinær stasjon,PM10,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,111.8,µg/m³,59.9193,10.69651,3600,2,ff9900,True,True
+46,Vestlandet,Stavanger,Stavanger,Kannik,NO0076A,Veinær stasjon,PM10,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,31.285639,µg/m³,58.96422,5.72786,3600,1,6ee86e,True,True
+4709,Stor-Oslo,Oslo,Oslo,Brynbanen,NO0149A,Bybakgrunnsstasjon,PM10,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,22.877343,µg/m³,59.9156,10.82517,3600,1,6ee86e,True,True
+4721,Midt-Norge og Nordland,Narvik,Narvik,Kongens gate,NO0148A,Veinær stasjon,PM10,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,5.497494,µg/m³,68.4354123,17.4249127,3600,1,6ee86e,True,True
+4760,Stor-Oslo,Oslo,Oslo,Ring 3 Økern,NO0150A,Veinær stasjon,PM10,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,161.763219,µg/m³,59.928454,10.801863,3600,3,ff0000,True,True
+4770,Øst og Sørlandet,Hamar,Hamar,Vangsvegen-Disen,NO0151A,Veinær stasjon,PM10,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,90.616019,µg/m³,60.796459,11.096757,3600,2,ff9900,True,True
+4787,Stor-Oslo,Oslo,Oslo,Langkaia,NO0152A,Industripåvirket stasjon,PM10,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,22.062678,µg/m³,59.908256,10.749474,3600,1,6ee86e,True,True
+4833,Stor-Oslo,Oslo,Oslo,Rv4 Linderud senter,NO0155A,Veinær stasjon,PM10,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,40.177819,µg/m³,59.943792,10.834621,3600,1,6ee86e,True,True
+4841,Øst og Sørlandet,Kristiansand,Kristiansand,Fiskå,NO0156A,Industripåvirket stasjon,PM10,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,14.848809,µg/m³,58.12543,7.96635,3600,1,6ee86e,True,True
+4790,Stor-Oslo,Drammen,Drammen,Bangeløkka,NO0067A,Veinær stasjon,PM10,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,69.588836,µg/m³,59.73327,10.21167,3600,2,ff9900,True,True
+3121,Øst og Sørlandet,Kristiansand,Kristiansand,Bjørndalssletta,NO0134A,Veinær stasjon,PM10,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,85.701489,µg/m³,58.16232369,8.02377464,3600,2,ff9900,True,True
+3126,Stor-Oslo,Drammen,Drammen,Backeparken,NO0135A,Bybakgrunnsstasjon,PM10,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,54.4,µg/m³,59.749526,10.165301,3600,1,6ee86e,True,True
+3171,Stor-Oslo,Oslo,Oslo,Spikersuppa,NO0140A,Bybakgrunnsstasjon,PM10,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,21.683593,µg/m³,59.914051,10.735978,3600,1,6ee86e,True,True
+3124,Stor-Oslo,Drammen,Drammen,Vårveien,NO0136A,Veinær stasjon,PM10,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,105.2,µg/m³,59.753618,10.144397,3600,2,ff9900,True,True
+4795,Stor-Oslo,Bærum,Bærum,E18 Høvik stasjon,NO0153A,Veinær stasjon,PM10,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,192.9,µg/m³,59.901395,10.588389,3600,3,ff0000,True,True
+3142,Trondheim,Trondheim,Trondheim,Åsveien skole,NO0139A,Veinær stasjon,PM10,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,2.681849,µg/m³,63.415358,10.368372,3600,1,6ee86e,True,True
+545,Øst og Sørlandet,Lillehammer,Lillehammer,Lillehammer barnehage,NO0075A,Bybakgrunnsstasjon,NO2,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,5.776046,µg/m³,61.12087,10.46563,3600,1,6ee86e,True,True
+2948,Øst og Sørlandet,Lørenskog,Lørenskog,Solheim,NO0129A,Veinær stasjon,NO2,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,16.724675,µg/m³,59.928612,10.953203,3600,1,6ee86e,True,True
+1662,Øst og Sørlandet,Gjøvik,Gjøvik,"Minnesundvegen, Gjøvik",NO0103A,Veinær stasjon,NO2,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,16.051355,µg/m³,60.79089,10.6967,3600,1,6ee86e,True,True
+2705,Øst og Sørlandet,Elverum,Elverum,Leiret,NO0119A,Veinær stasjon,NO2,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,14.449817,µg/m³,60.883643,11.559301,3600,1,6ee86e,True,True
+2942,Stor-Oslo,Oslo,Oslo,E6 Alna senter,NO0122A,Veinær stasjon,NO2,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,21.930322,µg/m³,59.92556,10.850367,3600,1,6ee86e,True,True
+2970,Øst og Sørlandet,Tønsberg,Tønsberg,Nedre Langgate,NO0128A,Veinær stasjon,NO2,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,7.090627,µg/m³,59.263725,10.411165,3600,1,6ee86e,True,True
+2724,Øst og Sørlandet,Grenland,Grenland,Knarrdalstranda,NO0118A,Bybakgrunnsstasjon,NO2,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,1.076468,µg/m³,59.13354,9.6219,3600,1,6ee86e,True,True
+2077,Bergen,Bergen,Bergen,Loddefjord,NO0109A,Veinær stasjon,NO2,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,15.169727,µg/m³,60.361135,5.23686,3600,1,6ee86e,True,True
+2891,Bergen,Bergen,Bergen,Rådal,NO0121A,Veinær stasjon,NO2,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,17.174716,µg/m³,60.294268,5.324619,3600,1,6ee86e,True,True
+3015,Vestlandet,Stavanger,Stavanger,Schancheholen,NO0125A,Veinær stasjon,NO2,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,14.033792,µg/m³,58.951877,5.721875,3600,1,6ee86e,True,True
+2905,Bergen,Bergen,Bergen,Klosterhaugen,NO0120A,Bybakgrunnsstasjon,NO2,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,8.775557,µg/m³,60.395929,5.312674,3600,1,6ee86e,True,True
+1528,Trondheim,Trondheim,Trondheim,E6-Tiller,NO0102A,Veinær stasjon,NO2,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,8.789409,µg/m³,63.35761,10.37174,3600,1,6ee86e,True,True
+1786,Stor-Oslo,Oslo,Oslo,Sofienbergparken,NO0073A,Bybakgrunnsstasjon,NO2,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,8.023128,µg/m³,59.92305,10.76574,3600,1,6ee86e,True,True
+2076,Bergen,Bergen,Bergen,"Rolland, Åsane",NO0108A,Bybakgrunnsstasjon,NO2,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,4.264669,µg/m³,60.462665,5.332447,3600,1,6ee86e,True,True
+21,Stor-Oslo,Oslo,Oslo,Kirkeveien,NO0011A,Veinær stasjon,NO2,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,19.509644,µg/m³,59.93231,10.72455,3600,1,6ee86e,True,True
+1230,Øst og Sørlandet,Grenland,Grenland,Sverresgate,NO0106A,Veinær stasjon,NO2,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,4.153707,µg/m³,59.13816,9.6522,3600,1,6ee86e,True,True
+48,Vestlandet,Stavanger,Stavanger,Kannik,NO0076A,Veinær stasjon,NO2,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,20.256321,µg/m³,58.96422,5.72786,3600,1,6ee86e,True,True
+56,Vestlandet,Stavanger,Stavanger,Våland,NO0065A,Bybakgrunnsstasjon,NO2,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,7.51456,µg/m³,58.96165,5.7314,3600,1,6ee86e,True,True
+2322,Stor-Oslo,Bærum,Bærum,Bekkestua,NO0114A,Bybakgrunnsstasjon,NO2,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,13.76843,µg/m³,59.91822,10.58393,3600,1,6ee86e,True,True
+2361,Øst og Sørlandet,Grenland,Grenland,Furulund,NO0115A,Industripåvirket stasjon,NO2,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,34.547431,µg/m³,59.057304,9.695568,3600,1,6ee86e,True,True
+742,Øst og Sørlandet,Grenland,Grenland,Haukenes,NO0062A,Bakgrunnsstasjon,NO2,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,0.640787,µg/m³,59.20243,9.4871,3600,1,6ee86e,True,True
+9,Bergen,Bergen,Bergen,Danmarks plass,NO0059A,Veinær stasjon,NO2,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,32.752542,µg/m³,60.37408,5.34042,3600,1,6ee86e,True,True
+44,Stor-Oslo,Oslo,Oslo,Alnabru,NO0057A,Veinær stasjon,NO2,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,24.841356,µg/m³,59.92769,10.84655,3600,1,6ee86e,True,True
+2062,Øst og Sørlandet,Sarpsborg,Sarpsborg,Alvim,NO0110A,Veinær stasjon,NO2,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,8.905087,µg/m³,59.27377544,11.08919017,3600,1,6ee86e,True,True
+540,Øst og Sørlandet,Lillehammer,Lillehammer,Bankplassen,NO0074A,Veinær stasjon,NO2,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,3.482888,µg/m³,61.11295,10.46487,3600,1,6ee86e,True,True
+36,Stor-Oslo,Oslo,Oslo,Manglerud,NO0071A,Veinær stasjon,NO2,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,30.746657,µg/m³,59.89864,10.8149,3600,1,6ee86e,True,True
+197,Øst og Sørlandet,Kristiansand,Kristiansand,Stener Heyerdahl,NO0063A,Bybakgrunnsstasjon,NO2,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,5.449253,µg/m³,58.14888,7.99183,3600,1,6ee86e,True,True
+3176,Vestlandet,Stavanger,Stavanger,Vågen,NO0141A,Bybakgrunnsstasjon,NO2,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,5.700472,µg/m³,58.9726488545842,5.72649786093436,3600,1,6ee86e,True,True
+735,Øst og Sørlandet,Grenland,Grenland,Lensmannsdalen,NO0061A,Veinær stasjon,NO2,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,9.071155,µg/m³,59.1593,9.63573,3600,1,6ee86e,True,True
+1234,Øst og Sørlandet,Fredrikstad,Fredrikstad,St.Croix,NO0084A,Veinær stasjon,NO2,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,14.890463,µg/m³,59.21028,10.94535,3600,1,6ee86e,True,True
+1042,Stor-Oslo,Oslo,Oslo,Hjortnes,NO0093A,Veinær stasjon,NO2,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,8.386207,µg/m³,59.91126,10.70398,3600,1,6ee86e,True,True
+596,Stor-Oslo,Drammen,Drammen,Bangeløkka,NO0067A,Veinær stasjon,NO2,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,14.253191,µg/m³,59.73327,10.21167,3600,1,6ee86e,True,True
+393,Troms og Finnmark,Tromsø,Tromsø,Hansjordnesbukta,NO0079A,Veinær stasjon,NO2,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,22.955289,µg/m³,69.65625,18.96372,3600,1,6ee86e,True,True
+4793,Stor-Oslo,Bærum,Bærum,E18 Høvik stasjon,NO0153A,Veinær stasjon,NO2,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,29.159916,µg/m³,59.901395,10.588389,3600,1,6ee86e,True,True
+4759,Stor-Oslo,Oslo,Oslo,Ring 3 Økern,NO0150A,Veinær stasjon,NO2,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,35.048905,µg/m³,59.928454,10.801863,3600,1,6ee86e,True,True
+4764,Stor-Oslo,Oslo,Oslo,Vahl skole,NO0143A,Veinær stasjon,NO2,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,10.327466,µg/m³,59.9169444,10.766,3600,1,6ee86e,True,True
+4768,Øst og Sørlandet,Hamar,Hamar,Vangsvegen-Disen,NO0151A,Veinær stasjon,NO2,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,24.412358,µg/m³,60.796459,11.096757,3600,1,6ee86e,True,True
+4831,Stor-Oslo,Oslo,Oslo,Rv4 Linderud senter,NO0155A,Veinær stasjon,NO2,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,10.87954,µg/m³,59.943792,10.834621,3600,1,6ee86e,True,True
+3119,Øst og Sørlandet,Kristiansand,Kristiansand,Bjørndalssletta,NO0134A,Veinær stasjon,NO2,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,19.298045,µg/m³,58.16232369,8.02377464,3600,1,6ee86e,True,True
+4713,Stor-Oslo,Oslo,Oslo,Brynbanen,NO0149A,Bybakgrunnsstasjon,NO2,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,9.203927,µg/m³,59.9156,10.82517,3600,1,6ee86e,True,True
+3199,Stor-Oslo,Oslo,Oslo,Oslo Rådhus,NO0144A,Bybakgrunnsstasjon,NO2,2025-03-19T10:00:00+01:00,2025-03-19T11:00:00+01:00,6.1,µg/m³,59.912185,10.733669,3600,1,6ee86e,True,True
+1683,Trondheim,Trondheim,Trondheim,Elgeseter,NO0060A,Veinær stasjon,NO2,2025-03-19T11:00:00+01:00,2025-03-19T12:00:00+01:00,27.998745,µg/m³,63.419239,10.395945,3600,1,6ee86e,True,True
