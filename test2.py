@@ -2,30 +2,24 @@
 
 import requests
 
-# Sett inn din API-nøkkel her
-API_KEY = "828ce8950001217e876b9e1e29a137ab72e5bf2a75e5a431f021d67d802eecbf"
+#url = "https://api.openaq.org/v3/locations/8118"
+headers = {"X-API-Key": "828ce8950001217e876b9e1e29a137ab72e5bf2a75e5a431f021d67d802eecbf"}
 
-# API-endepunkt for å hente sanntidsdata
-url = "https://api.openaq.org/v3/latest"
+#response = requests.get(url, headers=headers)
 
-# Parametere (f.eks. for London)
-params = {
-    "city": "London",
-    "limit": 5,  # Begrens antall resultater
-}
+#url = "https://api.openaq.org/v3/parameters/2/latest?limit=1000" 
+url = "https://api.openaq.org//v3/countries/{6}?limit=1000" 
+#headers = {"X-API-Key": "828ce8950001217e876b9e1e29a137ab72e5bf2a75e5a431f021d67d802eecbf"}
 
-# Headers (inkluderer API-nøkkel)
-headers = {
-    "Authorization": f"Bearer {API_KEY}"  # OpenAQ krever en "Bearer Token"
-}
+response = requests.get(url, headers=headers)
 
-# Send forespørselen
-response = requests.get(url, headers=headers, params=params)
+response = requests.get(url, headers=headers) 
 
-# Sjekk om forespørselen var vellykket
 if response.status_code == 200:
-    data = response.json()  # Konverterer svaret til JSON
-    print(data)  # Skriv ut luftkvalitetsdata
+    data = response.json()
+    print(data)
 else:
-    print(f"Feil {response.status_code}: {response.text}")  # Feilmelding
+    print("Feil ved API-forespørselen:", response.status_code)
 
+
+#/v3/countries/{countries_id}
