@@ -2,7 +2,6 @@
 Updated upstream
 
 
-
 Dette prosjektet samler inn og analyserer miljødata med fokus på luftkvalitet i europeiske storbyer. 
 Ved hjelp av åpne datakilder henter vi sanntidsdata om luftforurensning, og utfører analyser av nivåer 
 av partikler som PM2.5 og NO₂. Dataene bearbeides og lagres i strukturert form, for videre visualisering 
@@ -60,6 +59,8 @@ link: .....
 - God kvalitetsdata
 - Relevante luftkvalitetsparametere: PM2.5, NO2, O3, AQI, osv
 - Sanntids- og historiske data
+- Pålitelig kilde
+
 
 
 DATAINNSAMLING
@@ -70,4 +71,3 @@ DATAINNSAMLING
 
 
 DATABEHANDLING
-Stashed changes
