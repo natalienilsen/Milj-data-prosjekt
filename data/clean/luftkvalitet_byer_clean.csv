@@ -1,0 +1,11 @@
+city,aqi,category,main_pollutant
+London,47,Moderate air quality,pm25
+Paris,80,Excellent air quality,pm25
+Oslo,58,Moderate air quality,pm10
+Amsterdam,47,Moderate air quality,pm25
+København,58,Moderate air quality,pm10
+Berlin,55,Moderate air quality,pm25
+Moskva,46,Moderate air quality,pm10
+Madrid,70,Good air quality,o3
+Ankara,69,Good air quality,pm10
+Roma,54,Moderate air quality,pm25
