@@ -13,91 +13,94 @@ import os
 #---BESTM HVILKEN FIL MED RÅDATA SOM SKAL FINSKRIVES---
 #------------------------------------------------------
 
-filepath = "/Users/vildevikane/Desktop/Milj-data-prosjekt/data/luftkvalitet_nilu.csv"
+filepath = "/Users/vildevikane/Desktop/Milj-data-prosjekt/luftkvalitet_test.csv"
 #OBS, må være csv!
 
 
 #----------------------------------------------------------
 #---SJEKKER FOR IKKE-EKSISTERENDE VERDIER OG NULLVERDIER---
 #----------------------------------------------------------
-def check_missing_and_zero(df):
-    print("\n🔍 Sjekker etter manglende verdier (NaN):")
-    print(df.isna().sum())
-    print("\n🔍 Sjekker etter null-verdier (0):")
-    print((df == 0).sum())
     
-def check_NaN_and_zero(filepath):
+def check_odd_values(filepath):
+    #Leser inn filen: dette kan kanskje gjøres om til en egen funksjon
     if not os.path.exists(filepath):
         print("Fant ikke filen :(")
     else:
         df = pd.read_csv(filepath)
+    
+    #NaN-sjekk
+    print("Antall NaN-verdier pr kolonne: ")
+    print(df.isna().sum()) #isna() gir en bool på om det finnes NaN, sum() gir antallet bool, True for hver kolonne
+
+    #0-verdi-sjekk
+    print("\n🔍 Sjekker etter null-verdier (0):")
+    print((df == 0).sum())
+    
+    #Duplikater
+    number_duplicates = df.duplicated().sum()
+    print(f"Duplikater i datasettet: {number_duplicates} rader")
+    
+    #Ulogiske verdier (-9999, AQI >= 0, eller veldig høyt)
+    if "AQI" in df.columns: 
+        print("Ulogiske AQI-verdier: ")
+        odd_values_AQI = df[(df["AQI"] <= 0) | (df["AQI"] == -9999) | (df["AQI"] > 500)]
+        print(odd_values_AQI)
+    else: 
+        print("Filen inneholder ikke AQI.")
+    
+    #lag flere koder for ulogiske verdier utifra hvilken cvs fil. 
+    #Med det mener jeg at hvis en fil inneholder CO2-verdier så kan vi lete etter CO2 verdier som er skyhøye. Slik det er gjort med AQI
+    #Evnt så kan alt dette slås sammen til én kode sikkert. 
+    
 
 
 #--------------------------
 #---RENSER DATAINNHOLDET---
 #--------------------------
-def clean_data(df):
-    """Fjerner duplikater og uregelmessige verdier"""
-    # Fjern duplikater
-    df = df.drop_duplicates()
 
-    # Fjern rader med NaN
-    df = df.dropna()
+#Denne funker ikke helt 
 
-    # Fjern rader med AQI = -9999 eller AQI <= 0
-    df = df[df['AQI'] > 0]
-    df = df[df['AQI'] != -9999]
+new_file_name = input("Hva ønsker du at den nye, rensede filen skal hete? Tror du må skrive .csv på slutten")
+print("Du skrev:", new_file_name)
 
-    return df
+def cleaning_data(filepath, save_to = new_file_name):
+    #Leser inn filen: dette kan kanskje gjøres om til en egen funksjon
+    if not os.path.exists(filepath):
+        print("Fant ikke filen :(")
+    else:
+        df = pd.read_csv(filepath)
+    
+    print("Renser filen")
+    
+    #Fjerner rader med manglende verdier. 
+    df.dropna()
+    
+    #Fjerner duplikater
+    df.drop_duplicates()
+    
+    # Lagre renset data
+    #Tror det er her den tuller seg
+    os.makedirs(os.path.dirname(save_to), exist_ok=True)
+    df.to_csv(save_to, index=False)
+    print(f"Renset data lagret til: {save_to}\n")
+
 
 #-----------------------------
 #---STANDARISERER KOLONNENE---
 #-----------------------------
-#****Denne er ikke riktig****#
-def standardize_columns(df):
-    """Standardiserer kolonnenavn til engelsk og snake_case"""
-    df = df.rename(columns={
-        "By": "city",
-        "AQI": "aqi",
-        "Kategori": "category",
-        "Dominerende forurensning": "main_pollutant"
-    })
-    return df
+
 
 
 #--------------------------------------
 #---LAGRER RENSET DATA I EN NY MAPPE---
 #--------------------------------------
-def save_cleaned_data(df, output_path="data/clean/luftkvalitet_nilu.csv"):
-    """Lagrer renset og formatert data til ny CSV-fil"""
-    os.makedirs(os.path.dirname(output_path), exist_ok=True)
-    df.to_csv(output_path, index=False)
-    print(f"\n✅ Renset data lagret til: {output_path}")
+
 
 
 #---------------------
 #---HOVEDPROGRAMMET---
 #---------------------
-input_fil = filepath = "/Users/vildevikane/Desktop/Milj-data-prosjekt/data/luftkvalitet_nilu.csv"
 
-def behandle_data(input_fil):
-    """Hovedfunksjon for å kjøre alle stegene"""
-    print("📥 Leser inn data...")
-    df = load_data(input_fil)
-
-    check_missing_and_zero(df)
-
-    print("\n🧹 Rydder og renser data...")
-    df = clean_data(df)
-
-    print("\n🔠 Standardiserer kolonnenavn...")
-    df = standardize_columns(df)
-
-    save_cleaned_data(df)
-
-    print("\n🚀 Data er klar for analyse og visualisering!")
-
-
-# Kjør kun hvis filen kjøres direkte
 if __name__ == "__main__":
-    behandle_data("data/luftkvalitet_nilu.csv")
+    check_odd_values(filepath)
+    cleaning_data(filepath, save_to = new_file_name)

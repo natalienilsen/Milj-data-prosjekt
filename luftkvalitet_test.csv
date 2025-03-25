@@ -1,0 +1,14 @@
+By,AQI,Kategori,Dominerende forurensning
+Oslo,58,Moderate air quality,pm10
+Berlin,0,Moderate air quality,pm25
+Paris,80,Excellent air quality,pm25
+Madrid,,Good air quality,o3
+London,-9999,Moderate air quality,pm25
+Berlin,0,Moderate air quality,pm25
+Paris,80,Excellent air quality,pm25
+København,46,,pm10
+Roma,54,Moderate air quality,
+Amsterdam,55,Moderate air quality,pm25
+Ankara,58,Moderate air quality,pm10
+Madrid,,Good air quality,o3
+London,-9999,Moderate air quality,pm25
