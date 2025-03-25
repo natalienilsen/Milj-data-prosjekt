@@ -40,15 +40,38 @@ DATAKILDER/API
 
 **Google Air Quality API**
 link: https://mapsplatform.google.com/maps-products/air-quality/ 
+
+    Hva hentes? : 
+        Vi har brukt Google Air Quality API for å hente ut sanntidsmålinger av luftkvalitetsindex i storbyer i Europa.
+        Fra API´en henter vi ut kategori og dominerende forurensing per koordinat. 
+
+
         - Brukt for sanntidsmålinger av luftkvalitetsindex
         - Gir oss kategori og dominerende forurensing per koordinat
+    
+    
+    Hvorfor er den valgt? : 
+        Google Air Quality API er en pålitelig og gratis plattform å hente API fra. 
+
+
+
+    Ulemper :
+        Datakilden krever API-nøkkel som er gratis i 30 dager. Vi må dermed bytte ut API nøkkelen hver 30´ende dag. 
+
         - Krever API-nøkkel
 
 
 **European Environment Agency (EEA)**
 link: .....
+    Hva hentes? : 
+        Vi har hentet ut CSV-filer med historiske luftdata fra utvalgte storbyer i Europa. 
         - CSV-fil med historiske luftdata fra byer i Europa
         - Brukes til å se trender når det kommer til luftkvalitet
+
+    Hvorfor er den valgt? : 
+
+
+    Ulemper? : 
 
 
 
