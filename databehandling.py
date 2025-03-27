@@ -33,7 +33,7 @@ def check_odd_values(filepath):
     print(df.isna().sum()) #isna() gir en bool på om det finnes NaN, sum() gir antallet bool, True for hver kolonne
 
     #0-verdi-sjekk
-    print("\n🔍 Sjekker etter null-verdier (0):")
+    print("\nSjekker etter null-verdier (0):")
     print((df == 0).sum())
     
     #Duplikater
@@ -50,20 +50,15 @@ def check_odd_values(filepath):
     
     #lag flere koder for ulogiske verdier utifra hvilken cvs fil. 
     #Med det mener jeg at hvis en fil inneholder CO2-verdier så kan vi lete etter CO2 verdier som er skyhøye. Slik det er gjort med AQI
-    #Evnt så kan alt dette slås sammen til én kode sikkert. 
+    #Evnt så kan alt dette slås sammen til én kode sikkert, men vet ikke hvordan. 
     
 
 
-#--------------------------
-#---RENSER DATAINNHOLDET---
-#--------------------------
+#--------------------------------------------------------------
+#---RENSER DATAINNHOLDET OG LAGRER RENSET DATA I EN NY MAPPE---
+#--------------------------------------------------------------
 
-#Denne funker ikke helt 
-
-new_file_name = input("Hva ønsker du at den nye, rensede filen skal hete? Tror du må skrive .csv på slutten")
-print("Du skrev:", new_file_name)
-
-def cleaning_data(filepath, save_to = new_file_name):
+def cleaning_data(filepath, save_to):
     #Leser inn filen: dette kan kanskje gjøres om til en egen funksjon
     if not os.path.exists(filepath):
         print("Fant ikke filen :(")
@@ -73,27 +68,30 @@ def cleaning_data(filepath, save_to = new_file_name):
     print("Renser filen")
     
     #Fjerner rader med manglende verdier. 
-    df.dropna()
+    df = df.dropna()
     
     #Fjerner duplikater
-    df.drop_duplicates()
+    df = df.drop_duplicates()
     
-    # Lagre renset data
-    #Tror det er her den tuller seg
-    os.makedirs(os.path.dirname(save_to), exist_ok=True)
+    #Fjerner rare verdier
+    if "AQI" in df.columns:
+        df = df[df["AQI"] != -999] #beholder alle verdier som ikke er -999
+        df = df[df["AQI"] > 0] #beholder alle verdier som er over 0
+        df = df[df["AQI"] <= 500] #beholder alle verdier som er under/lik 500
+      
+    # Lagrer renset data til ny fil
+    dirpath = os.path.dirname(save_to)
+    if dirpath:  # unngå feil hvis det ikke er noen mappe i filnavnet
+        os.makedirs(dirpath, exist_ok=True)
     df.to_csv(save_to, index=False)
     print(f"Renset data lagret til: {save_to}\n")
-
+    
 
 #-----------------------------
 #---STANDARISERER KOLONNENE---
 #-----------------------------
-
-
-
-#--------------------------------------
-#---LAGRER RENSET DATA I EN NY MAPPE---
-#--------------------------------------
+#Her skjønner jeg ikke helt hva som trengs
+#Må være noe med å gjøre klar data for visualisering
 
 
 
@@ -102,5 +100,15 @@ def cleaning_data(filepath, save_to = new_file_name):
 #---------------------
 
 if __name__ == "__main__":
+    # 1. Velg hvilken fil med rådata som skal renses
+    filepath = "/Users/vildevikane/Desktop/Milj-data-prosjekt/luftkvalitet_test.csv"
+    
+    # 2. Sjekker feil
     check_odd_values(filepath)
-    cleaning_data(filepath, save_to = new_file_name)
+
+    # 3. Spør etter nytt filnavn til den rensede filen
+    new_file_name = input("Hva ønsker du at den nye, rensede filen skal hete? (f.eks. 'data/clean/luftkvalitet_clean.csv'): NB! Husk å skriv data/clean/ ")
+    print("Du skrev:", new_file_name)
+
+    # 4. Rens og lagre i ny mappe: /data/clean
+    cleaning_data(filepath, new_file_name)
