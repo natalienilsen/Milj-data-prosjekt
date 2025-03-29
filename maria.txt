@@ -1,5 +1,6 @@
 hei dette er min første commit
 
+Her kommer min andre commit
 
 
 
