@@ -65,7 +65,7 @@ def validate_luftkvalitet_data(df):
         'unique_pollutants': df['main_pollutant '].unique().tolist() if 'main_pollutant' in df.columns else [],
         'aqi_stats': df['aqi'].describe().to_dict() if 'aqi' in df.columns else {},
         'row_count': len(df)
-    }
+        }
     
     return validation_report 
     
