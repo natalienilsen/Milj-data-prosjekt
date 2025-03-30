@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 def clean_luftkvalitet_data(df):
     
-    df = pd.read_csv('data/clean7luftkvalitet__byer_clean.csv')
+    df = pd.read_csv('/Users/vildevikane/Desktop/Milj-data-prosjekt/data/raw/luftkvalitet_test.csv')
     
     # Lager en kopi for å unngå å endre orginalen
     df_clean = df.copy()
@@ -69,7 +69,7 @@ def validate_luftkvalitet_data(df):
     
     return validation_report 
     
- def process_luftkvalitet_data(filepath):
+def process_luftkvalitet_data(filepath):
     # Behandle luftkvalitetsdata fra CSV-fil
 
     # Lese CSV-filen
@@ -84,7 +84,7 @@ def validate_luftkvalitet_data(df):
     return cleaned_df, validation_report
     
 # Tester koden:
-file_path = 'data/clean/luftkvalitet_byer_clean.csv'
+file_path = '/Users/vildevikane/Desktop/Milj-data-prosjekt/data/raw/luftkvalitet_test.csv'
 cleaned_data, report = process_luftkvalitet_data(file_path)
 
 # Se rapporten
