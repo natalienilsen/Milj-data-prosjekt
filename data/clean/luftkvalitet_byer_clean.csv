@@ -1,4 +1,4 @@
-city,aqi,category,main_pollutant
+By,AQI,category,main_pollutant
 London,47,Moderate air quality,pm25
 Paris,80,Excellent air quality,pm25
 Oslo,58,Moderate air quality,pm10
