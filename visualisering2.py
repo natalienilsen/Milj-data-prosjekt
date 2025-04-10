@@ -25,13 +25,14 @@ def lag_grafer(df):
     
     # 2.Histogram: fordeling av AQI-verdier
     #denne kan forbedres
-    plt.figure(figsize = (10,6))
-    sns.histplot(df["AQI"], bins = 20, kde = True)
-    plt.title("Fordeling av AQI-verdier")
-    plt.xlabel("AQI")
-    plt.ylabel("Antall målinger")
-    plt.tight_layout()
-    plt.show()
+    if "AQI" in df.columns:
+        plt.figure(figsize = (10,6))
+        sns.histplot(df["AQI"], bins = 20, kde = True)
+        plt.title("Fordeling av AQI-verdier")
+        plt.xlabel("AQI")
+        plt.ylabel("Antall målinger")
+        plt.tight_layout()
+        plt.show()
     
     # 3.Boxplot: AQI etter luftkvalitetskategori
     # denne likte jeg ikke, lite intuitiv synes jeg
@@ -44,19 +45,20 @@ def lag_grafer(df):
         plt.show()
     
     # 4.Histogram: luftkvalitetskategori
-    plt.figure(figsize = (10,6))
-    sns.histplot(df["category"], bins = 20)
-    plt.title("Fordeling av AQI-verdier")
-    plt.xlabel("category")
-    plt.ylabel("Antall målinger")
-    plt.tight_layout()
-    plt.show()
+    if "category" in df.columns:
+        plt.figure(figsize = (10,6))
+        sns.histplot(df["category"], bins = 20)
+        plt.title("Fordeling av AQI-verdier")
+        plt.xlabel("category")
+        plt.ylabel("Antall målinger")
+        plt.tight_layout()
+        plt.show()
     
     #5. Histogram: Dominerende forurensning blandt storbyene
     plt.figure(figsize = (8,6))
-    sns.histplot(df["Dominerende forurensning"], bins = 20)
-    plt.title("Fordeling av AQI-verdier")
-    plt.xlabel("Dominerende forurensning")
+    sns.histplot(df["main_pollutant"], bins = 20)
+    plt.title("Dominerende forurensning")
+    plt.xlabel("Type forurensning")
     plt.ylabel("Antall målinger")
     plt.tight_layout()
     plt.show()
