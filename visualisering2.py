@@ -24,6 +24,7 @@ def lag_grafer(df):
     plt.show()
     
     # 2.Histogram: fordeling av AQI-verdier
+    #denne kan forbedres
     plt.figure(figsize = (10,6))
     sns.histplot(df["AQI"], bins = 20, kde = True)
     plt.title("Fordeling av AQI-verdier")
@@ -33,6 +34,7 @@ def lag_grafer(df):
     plt.show()
     
     # 3.Boxplot: AQI etter luftkvalitetskategori
+    # denne likte jeg ikke, lite intuitiv synes jeg
     if "category" in df.columns:
         plt.figure(figsize= (10,6))
         sns.boxplot(data=df, x = "category", y = "AQI")
@@ -43,7 +45,6 @@ def lag_grafer(df):
     
     # 4.Histogram: luftkvalitetskategori
     plt.figure(figsize = (10,6))
-    #sns.barplot(data=df, x = "category", y = "Antall målinger", estimator = "mean", errorbar=None, color = "green")
     sns.histplot(df["category"], bins = 20)
     plt.title("Fordeling av AQI-verdier")
     plt.xlabel("category")
