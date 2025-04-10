@@ -51,6 +51,16 @@ def lag_grafer(df):
     plt.ylabel("Antall målinger")
     plt.tight_layout()
     plt.show()
+    
+    #5. Histogram: Dominerende forurensning blandt storbyene
+    plt.figure(figsize = (8,6))
+    sns.histplot(df["Dominerende forurensning"], bins = 20)
+    plt.title("Fordeling av AQI-verdier")
+    plt.xlabel("Dominerende forurensning")
+    plt.ylabel("Antall målinger")
+    plt.tight_layout()
+    plt.show()
+    
 
 
 if __name__ == "__main__":
