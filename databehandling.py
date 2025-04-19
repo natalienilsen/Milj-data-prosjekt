@@ -129,7 +129,7 @@ def validate_luftkvalitet_data(df):
         
 if __name__ == "__main__":    
     # 1.Velg hvilken fil med rådata som skal renses
-    filepath = "/Users/vildevikane/Desktop/Milj-data-prosjekt/data/raw/gjennomsnitt_by_forurensning.csv"
+    filepath = "/Users/vildevikane/Desktop/Milj-data-prosjekt/data/raw/byer/wien_air_quality.csv"
     
     # 2.Sjekker feil
     check_odd_values(filepath)
