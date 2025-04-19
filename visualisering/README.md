@@ -14,3 +14,4 @@ Denne README oppsummerer arbeidet knyttet til **DEL 2: Oppgave 5: Visualisering*
 4. Kan du beskrive prosessen for å lage interaktive visualiseringer med Widgets, Plotly eller Bokeh, og hvilke fordeler dette kan gi i forhold til statiske visualiseringer?
 
 5. Hvordan vil du evaluere effektiviteten av visualiseringene dine i å formidle de viktigste funnene fra dataanalysen til et bredere publikum?
+    Ikke alle visualiseringene er like intuitive å forstå. Men samlet sett vil visualiseringene hjelpe med å forstå både hvordan hver enkelt komponent oppfører seg og hvordan korrelasjonen er mellom de ulike forurensningstypene. 
