@@ -1,0 +1,4 @@
+Statistikk,Verdi,Kolonne brukt,Kilde,Tolkning
+Gjennomsnitt,18.4,value,"NILU (Oslo, PM2.5)",Gjennomsnittlig luftkvalitet
+Median,11.67,value,"NILU (Oslo, PM2.5)",50 % av verdiene er lavere/høyere
+Standardavvik,16.2,value,"NILU (Oslo, PM2.5)",Variasjon i verdiene

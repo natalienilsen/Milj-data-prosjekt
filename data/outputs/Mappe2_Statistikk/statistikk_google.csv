@@ -1,0 +1,4 @@
+Statistikk,Verdi,Kolonne brukt,Kilde,Tolkning
+Gjennomsnitt,60.8,AQI,Google API,Gjennomsnittlig luftkvalitet
+Median,59.5,AQI,Google API,50 % av verdiene er lavere/høyere
+Standardavvik,8.19,AQI,Google API,Variasjon i verdiene
