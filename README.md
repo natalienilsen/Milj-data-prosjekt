@@ -103,8 +103,4 @@ Før analyse og visualisering har dataene:
 
 ### VISUALISERING
 
-Vi har brukt matplotlib til å visualisere:
-
-- Gjennomsnittlig nivå av luftforurensing fra EEA-data.
-- AQI fra Google Air Quality API
-- Dominerende forurensningstyper som er vist i grafer
+Vi har brukt matplotlib til å visuali
