@@ -1,17 +1,65 @@
-Denne README oppsummerer arbeidet knyttet til **DEL 2: Oppgave 5: Visualisering**.
+# Mappe **DEL 2: Dataanalyse, Visualisering og Prediksjon**
 
-*Vurderingskriterier:*
+Denne README viser arbeidet vårt knyttet til Mappe del 2 i prosjektet Miljødataanalyse, og vi har bygget videre på tidligere innsamlet data og gjort statistisk analyse, visualisering og prediktiv modellering.
 
-1. Hvilke spesifikke typer visualiseringer planlegger du å lage for å representere endringer i luftkvalitet og temperaturdata, og hvorfor valgte du disse?
-    Vi har valgt å bruke flere ulike grafer og diagrammer for å representere endringene , dette innebærer blant annet søylediagrammer, histogram og scatterplots. 
 
-2. Hvordan kan Matplotlib og Seaborn brukes til å forbedre forståelsen av de analyserte dataene, og hvilke funksjoner i disse bibliotekene vil være mest nyttige?
-    Matplotlib og Seaborn gjør det enklere å kjenne igjen mønstre og vise funnene visuelt på en mest mulig intuitiv måte. 
+### **Oppgave 4: Dataanalyse**
 
-3. Hvordan vil du håndtere og visualisere manglende data i grafene dine for å sikre at de fortsatt er informative?
-    Tidligere i prosjektet, da vi hentet data, har vi sørget for å filtrere ut manglende data i form av “NaN”, og fyller tomrommet med et gjennomsnitt. (????????) Dette gjør at resultatene likevel viser et helhetlig bilde av resultatet. 
+Pandas og NumPy ble brukt til å beregne statistiske mål som:
 
-4. Kan du beskrive prosessen for å lage interaktive visualiseringer med Widgets, Plotly eller Bokeh, og hvilke fordeler dette kan gi i forhold til statiske visualiseringer?
+- Gjennomsnitt, median og standardavvik
+- Per by og per datakilde (Google API, OpenWeather, NILU og EEA)
 
-5. Hvordan vil du evaluere effektiviteten av visualiseringene dine i å formidle de viktigste funnene fra dataanalysen til et bredere publikum?
-    Ikke alle visualiseringene er like intuitive å forstå. Men samlet sett vil visualiseringene hjelpe med å forstå både hvordan hver enkelt komponent oppfører seg og hvordan korrelasjonen er mellom de ulike forurensningstypene. 
+Analysen ble gjort for å vurdere nivå, spredning og kvalitet i luftmplingene. Det hjelper oss med å sammenlikne miljøbelastning på tvers av byer.
+
+Det som ble analysert var AQI (Air Quality Index) og PM2.5, PM10, NO2 og O3-verdier. Resultatene ble deretter lagret som CSV-filer og visualisert i data/outputs/Mappe2_Statistikk.
+
+Skjevheter ble håndtert ved å filtrere bort ugyldige verdier (NaN, -999, 0), og dropnp() og describe() ble brukt for datavalg og kvalitetssikring.
+
+
+### **Oppgave 5: Visualisering**
+
+Matplotlib og Seaborn er brukt for å lage visualiseringer som viser trender i luftkvalitet og forurensingsdata.
+
+***Innhold:***
+
+**valg_av_by.py:**
+
+- Datasett: OpenWeather (per by)
+- Innhold: viser PM2.5 over tid og gjennomsnitt for komponenter
+
+**visualisering_byer.py:**
+
+- Datasett: OpenWeather (alle byer)
+- Innhold: boxplot av spredning, barplot av gjennomsnitt, heatmap av korrelasjon
+
+**visualisering_by_forurensing.py:**
+
+- Datasett: EEA
+- Innhold: Sammenlikning av komponenter og byer
+
+**visualisering_utvekslingsby.py:**
+
+- Datasett: OpenWeather (København, Grenoble, Milano)
+- Innhold: Sammanlikning av PM2.5 og heatmat for de tre utvekslingsbyene
+
+**visualisering2.py**
+
+- Datasett: NILU, Google, EEA
+- Innhold: støtter mange datasett, laget søyle- , histogram- og boxplots
+
+
+
+**Visualiseringstypene som er brukt er:**
+
+- Søylediagram: for å vise sammenlikning av gjennomsnittlig forurensingtype per kilde
+- Linjediagram: for å vise utvikling over tid
+- Boxplot: for å vise variasjon og outliers
+- Heatmap: for å vise sammenhenger mellom komponenter
+
+Vi valgte statistisk visualisering for å prioritere presisjon og lesbarhet.
+
+Manglende data ble behandlet med dropna() før plot.
+
+
+### **Oppgave 6: Prediktiv Analyse**
