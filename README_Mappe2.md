@@ -41,4 +41,25 @@ Matplotlib og Seaborn er brukt for å lage visualiseringer som viser trender i l
 **visualisering_utvekslingsby.py:**
 
 - Datasett: OpenWeather (København, Grenoble, Milano)
-- Innhold: Sammanlikning av PM2.5 og heatmat for de tre utve
+- Innhold: Sammanlikning av PM2.5 og heatmat for de tre utvekslingsbyene
+
+**visualisering2.py**
+
+- Datasett: NILU, Google, EEA
+- Innhold: støtter mange datasett, laget søyle- , histogram- og boxplots
+
+
+
+**Visualiseringstypene som er brukt er:**
+
+- Søylediagram: for å vise sammenlikning av gjennomsnittlig forurensingtype per kilde
+- Linjediagram: for å vise utvikling over tid
+- Boxplot: for å vise variasjon og outliers
+- Heatmap: for å vise sammenhenger mellom komponenter
+
+Vi valgte statistisk visualisering for å prioritere presisjon og lesbarhet.
+
+Manglende data ble behandlet med dropna() før plot.
+
+
+### **Oppgave 6: Prediktiv Analyse**
