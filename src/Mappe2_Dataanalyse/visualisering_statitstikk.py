@@ -37,16 +37,4 @@ for bar in bars:
 plt.title("Sammenligning av gjennomsnittlig luftforurensning fra tre kilder")
 plt.ylabel("Forurensningsverdi")
 plt.ylim(0, max(data.values()) + 10)
-plt.grid(axis='y', linestyle='--', alpha=0.6)
-plt.tight_layout()
-
-
-# ---------- Lagre figuren ----------
-output_dir = "data/outputs"
-os.makedirs(output_dir, exist_ok=True)
-output_path = os.path.join(output_dir, "sammenligning_gjennomsnitt_kilder.png")
-plt.savefig(output_path)
-print(f"🖼️ Visualisering lagret som: {output_path}")
-
-
-plt.show()
+plt.grid(axi

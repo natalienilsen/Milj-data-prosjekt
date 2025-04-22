@@ -1,22 +1,22 @@
 import pandas as pd
 import os
 
-# --------------------------------------
-# 📥 1. Les inn EEA-data (DataExtract.csv)
-# --------------------------------------
+# ---------------------------------------
+# 1. Leser inn EEA-data (DataExtract.csv)
+# ---------------------------------------
 
 filepath = "data/raw/DataExtract.csv"
 
 if not os.path.exists(filepath):
-    print(f"❌ Fant ikke EEA-datasett: {filepath}")
+    print(f"Finner ikke EEA-datasett: {filepath}")
     exit()
 
 df = pd.read_csv(filepath, low_memory=False)
-print("✅ Lest EEA-data")
+print("Lest EEA-data")
 
-# --------------------------------------
-# 🧹 2. Filtrer til utvalgte byer
-# --------------------------------------
+# ------------------------------
+#  2. Filtrer til utvalgte byer
+# ------------------------------
 
 by_mapping = {
     "Oslo": ["Oslo"],
@@ -48,9 +48,9 @@ for visningsnavn, søkeord in by_mapping.items():
             "Antall målinger": len(df_by)
         })
 
-# --------------------------------------
-# 📤 3. Lagre som CSV
-# --------------------------------------
+# ------------------
+# 3. Lagrer som CSV
+# ------------------
 
 df_resultat = pd.DataFrame(resultater)
 
@@ -59,8 +59,8 @@ output_dir = "data/outputs"
 os.makedirs(output_dir, exist_ok=True)
 
 df_resultat.to_csv(f"{output_dir}/statistikk_eea.csv", index=False)
-print("📁 Lagret: statistikk_eea.csv")
+print("Lagret: statistikk_eea.csv")
 
 # Vis total snittverdi på tvers av byer
 snitt_total = df_resultat["Gjennomsnitt (Detection Limit)"].mean()
-print(f"\n📊 EEA – Gjennomsnitt på tvers av byene: {snitt_total:.2f}")
+print(f"\n EEA – Gjennomsnitt på tvers av byene: {snitt_total:.2f}")
