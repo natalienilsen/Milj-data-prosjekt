@@ -57,12 +57,12 @@ link: https://mapsplatform.google.com/maps-products/air-quality/
 link: https://www.eea.europa.eu/en/analysis/maps-and-charts/up-to-date-air-quality-data
 
 
-    **Hva hentes?**
+  **Hva hentes?**
 
 * Vi har hentet ut CSV-filer med historiske luftdata fra utvalgte storbyer i Europa.
 * Deretter har vi filtrert dataen slik at vi ser på kolonnene som inneholder verdier for luftforurensning som PM2.5, NO2 m.m. fra storbyene.
 
-    **Hvorfor er den valgt?** 
+  **Hvorfor er den valgt?** 
 
 * Denne kilden er åpen og gratis, og å kunne lagre dataen i en CSV. -fil, gjør det lettere å kontrollere hvilke kolonner som skal velges, og faktisk se dataen i et tabell.
 * Datafilen inneholder de relevante luftkvalitetsparameterene vi er på utskikk etter.
