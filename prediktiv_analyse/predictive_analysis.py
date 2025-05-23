@@ -113,7 +113,7 @@ def main():
     sns.set_style("whitegrid")
     sns.set_palette("coolwarm")
 
-    file_path = '/Users/mariaforland/Documents/NTNU/4.\ Semester/5.\ Semester/6. \ Semester/Milj-data-prosjekt/data/clean/luftkvalitet_byer_clean.csv'
+    file_path = '/Users/mariaforland/Documents/NTNU/4.\ Semester/5.\ Semester/6.\ Semester/Milj-data-prosjekt/data/clean/luftkvalitet_byer_clean.csv'
 
     # Forberede data
     X, y, df = prepare_data_for_regression(file_path)
