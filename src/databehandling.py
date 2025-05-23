@@ -65,10 +65,15 @@ def clean_and_save_data(filepath, save_to):
     df = df.drop_duplicates()
     
     #Fjerner rare verdier
-    if "AQI" in df.columns:
-        df = df[df["AQI"] != -999] #beholder alle verdier som ikke er -999
-        df = df[df["AQI"] > 0] #beholder alle verdier som er over 0
-        df = df[df["AQI"] <= 500] #beholder alle verdier som er under/lik 500
+    if "aqi" in df.columns:
+        df = df[df["aqi"] != -999] #beholder alle verdier som ikke er -999
+        df = df[df["aqi"] > 0] #beholder alle verdier som er over 0
+        df = df[df["aqi"] <= 500] #beholder alle verdier som er under/lik 500
+
+   # if "AQI" in df.columns:
+   #     df = df[df["AQI"] != -999] #beholder alle verdier som ikke er -999
+   #     df = df[df["AQI"] > 0] #beholder alle verdier som er over 0
+   #     df = df[df["AQI"] <= 500] #beholder alle verdier som er under/lik 500
       
     #Standariserer kolonnenavn
     df.columns = df.columns.str.lower().str.strip()
@@ -116,7 +121,7 @@ def validate_luftkvalitet_data(df):
     validation_report = {
         'missing_values': df.isnull().sum().to_dict(),
         'unique_categories': df['category'].unique().tolist() if 'category' in df.columns else [],
-        'unique_pollutants': df['main_pollutant '].unique().tolist() if 'main_pollutant' in df.columns else [],
+        'unique_pollutants': df['main_pollutant'].unique().tolist() if 'main_pollutant' in df.columns else [],
         'aqi_stats': df['aqi'].describe().to_dict() if 'aqi' in df.columns else {},
         'row_count': len(df)
     }
