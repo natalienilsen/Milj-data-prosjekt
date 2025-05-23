@@ -59,6 +59,35 @@ Manglende data ble behandlet med dropna() før plot.
 
 ### **Oppgave 6: Prediktiv Analyse**
 
+- Vi implementerte her en prediktiv modell basert på lineær regresjon med mål om å forutsi fremtidige nivåer av luftforurensning. Dette ble representert ved AQI basert på miljødata hentet fra tidligere renset CSV-fil.
+
+Manglende verdier ble visualisert ved heatmap og søylediagram for å vurdere omfanget. Deretter ble de håndtert ved å fulle med kolonnenes gjennomsnitt.
+
+Kategori-variabler ble gjort numeriske ved hjelp av one-hot encoding.
+
+Datene ble deretter delt inn i trenings- og testsett, og modellen ble så trent og evaluert ved hjelp av R² og RMSE.
+
+**Visualiseringer**
+
+1. Linjediagram
+
+- Viste endringer i AQI over tid for å observere trender
+- Grunnlag for valg: Linjediagram er godt egnet for tidsserier og gir et klart bilde av utviklingen
+
+2. Søylediagram
+
+- Brukt for å vise antall manglende verdier per kolonne
+- Grunnlag for valg: Gjør det mulig å raskt se hvilke variabler som hadde størst datamangler
+
+3. Scatterplot
+
+- Viser modellens presisjon ved å sammenligne faktisk og predikert AQI
+- Brukt for å vise avvik mellom forutsagte og faktiske verdier
+- Grunnlag for valg: Effektive for å vise forholdet mellom to variabler
+
+Visualiseringene ble laget ved bruk av Matplotlib og Seaborn.
+Vi tilpasset aksene, titlene og brukte fargepaletten 'coolwarm' for å forbedre lesbarheten og det estetiske uttrykket til modellene.
+
 ### Oppgave 7: Testing
 
 Vi har laget enhetstester v.h.a unittest slik som beskrevet i pensum. Testene er lagert for å sikre at viktige funksjoner i prosjektet fungerer som de skal.
@@ -95,31 +124,3 @@ Vi har brukt unittest som følger standard i Python:
 - Hver test begynner med test_...
 - setUp() og tearDown() brukes for å lage og slette testfiler
 - asssertTrue, assertEqual, assertIn, assertRaises brukes som assert-metoder.
-- Vi implementerte her en prediktiv modell basert på lineær regresjon med mål om å forutsi fremtidige nivåer av luftforurensning. Dette ble representert ved AQI basert på miljødata hentet fra tidligere renset CSV-fil.
-
-Manglende verdier ble visualisert ved heatmap og søylediagram for å vurdere omfanget. Deretter ble de håndtert ved å fulle med kolonnenes gjennomsnitt.
-
-Kategori-variabler ble gjort numeriske ved hjelp av one-hot encoding.
-
-Datene ble deretter delt inn i trenings- og testsett, og modellen ble så trent og evaluert ved hjelp av R² og RMSE.
-
-**Visualiseringer**
-
-1. Linjediagram
-
-- Viste endringer i AQI over tid for å observere trender
-- Grunnlag for valg: Linjediagram er godt egnet for tidsserier og gir et klart bilde av utviklingen
-
-2. Søylediagram
-
-- Brukt for å vise antall manglende verdier per kolonne
-- Grunnlag for valg: Gjør det mulig å raskt se hvilke variabler som hadde størst datamangler
-
-3. Scatterplot
-
-- Viser modellens presisjon ved å sammenligne faktisk og predikert AQI
-- Brukt for å vise avvik mellom forutsagte og faktiske verdier
-- Grunnlag for valg: Effektive for å vise forholdet mellom to variabler
-
-Visualiseringene ble laget ved bruk av Matplotlib og Seaborn.
-Vi tilpasset aksene, titlene og brukte fargepaletten 'coolwarm' for å forbedre lesbarheten og det estetiske uttrykket til modellene.
