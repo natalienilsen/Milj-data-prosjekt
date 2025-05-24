@@ -92,9 +92,7 @@ Vi tilpasset aksene, titlene og brukte fargepaletten 'coolwarm' for å forbedre 
 
 Vi har laget enhetstester v.h.a unittest slik som beskrevet i pensum. Testene er lagert for å sikre at viktige funksjoner i prosjektet fungerer som de skal.
 
-##### Vi har valgt å teste følgende unksjoner:
-
-databehandling.py:
+##### Vi har valgt å teste følgende funksjoner fra databehandling.py:
 
 - Sjekker at ugyldige AQI-verdier fjernes. For eksempel -999 eller over 500.
 - Sjekker at duplikater og NaN-verdier er håndtert korrekt.
@@ -104,17 +102,21 @@ databehandling.py:
 
 Her dekker testene både positive og negative scenarier.
 
-For å kjøre testene bruker vi 'bash' og deretter '**python -m unittest test/test_databehandling_unittest.py**'
+Vi har samlet alle testene i en Jupyter Notebook under /test for å kunne kjøre testene én og én. 
 
 ##### Testfiler:
 
- **test/test_databehandling_unittest.py**: Inneholder testklassen TestDatabehandling og 5 separate tester:
+**test/test-notebook.ipynb:** Inneholder testklassen TestDatabehandling og 5 separate tester:
 
-* test_setup_creates_raw_file
-* test_clean_and_save_data
-* test_city_standardization
-* test_validate_luftkvalitet_data
-* test_validate_with_missing_column
+test_raw_file_created --> Sjekker at testfiler er lagret korrekt og har strukturen vi forventer
+
+test_clean_and_save_data --> Sjekker at renset data fjerner de ugyldige verdiene og at kolonnene er standardisert.
+
+test_validate_luftkvalitet_data--> Sjekker at valideringsrapporten har riktig format og innhold
+
+test_check_odd_values_output--> Tester at funksjonen skriver ut info om NaN og duplikater.
+
+test_file_not_found--> Sjekker at manglene filer blir håndtert riktig og at de ikke krasjer.
 
 ##### Rammeverk og struktur
 

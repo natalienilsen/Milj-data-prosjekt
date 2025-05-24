@@ -17,7 +17,7 @@ url = f"http://api.openweathermap.org/data/2.5/air_pollution/history?lat={lat}&l
 
 eks_url = f"https://api.openweathermap.org/data/3.0/onecall?lat=33.44&lon=-94.04&exclude=hourly,daily&appid={API_key}"
 
-print("🔍 URL:", url)  # valgfritt for feilsøking
+print("URL:", url)  # valgfritt for feilsøking
 
 response = requests.get(url)
 
@@ -35,7 +35,7 @@ if response.status_code == 200:
     print(df.head())
 
     df.to_csv("data/clean/oslo_air_quality_5days.csv", index=False)
-    print("✅ Data lagret som oslo_air_quality_5days.csv")
+    print("Dataen er lagret som oslo_air_quality_5days.csv")
 
 else:
-    print(f"🚨 Noe gikk galt: {response.status_code}")
+    print(f"Noe gikk galt: {response.status_code}")

@@ -38,13 +38,13 @@ class TestDatabehandling(unittest.TestCase):
         df_clean = pd.read_csv(self.test_clean_path)
         print(df_clean["aqi"])
         
-        # Kolonnenavn skal være normalisert
+        #Kolonnenavn som skal være normalisert
         self.assertIn("aqi", df_clean.columns)
         self.assertTrue((df_clean["aqi"] > 0).all())
         self.assertTrue((df_clean["aqi"] <= 500).all())
         self.assertNotIn(-999, df_clean["aqi"].values)
 
-        # Sjekk at 'city' er renset og standardisert
+        #Sjekker at 'city' er renset og standardisert
         self.assertTrue(df_clean["city"].str[0].str.isupper().all())
 
     def test_validate_luftkvalitet_data(self):
@@ -60,14 +60,14 @@ class TestDatabehandling(unittest.TestCase):
 
     def test_check_odd_values_output(self):
         """Tester at funksjonen skriver ut informasjon (manuelt visuell sjekk)"""
-        # Rediriger output til buffer for å analysere print
+        #Rediriger output til buffer for å analysere print
         import sys
         captured_output = StringIO()
         sys.stdout = captured_output
 
         check_odd_values(self.test_raw_path)
 
-        sys.stdout = sys.__stdout__  # tilbakestill
+        sys.stdout = sys.__stdout__  
         output = captured_output.getvalue()
         self.assertIn("Antall NaN-verdier", output)
         self.assertIn("Duplikater", output)
@@ -77,7 +77,7 @@ class TestDatabehandling(unittest.TestCase):
         with self.assertRaises(FileNotFoundError):
             pd.read_csv("fil_som_ikke_finnes.csv")
 
-        # check_odd_values skal ikke kaste feil, men skrive ut
+        #check_odd_values skal ikke kaste feil, men skrive ut
         import sys
         captured = StringIO()
         sys.stdout = captured
