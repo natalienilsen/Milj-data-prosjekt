@@ -9,7 +9,11 @@ import matplotlib.pyplot as plt
 #######################################
 
 #API-nøkkelen for Google Air Quality API
-API_KEY = "AIzaSyA7SlToh7FabjrK6xORJTH2SsNmTj52rSA"  # ← husk å bytte!
+#API_KEY = "AIzaSyA7SlToh7FabjrK6xORJTH2SsNmTj52rSA"  # ← husk å bytte!
+
+#ny API-nøkkel:
+API_KEY = "AIzaSyBUvICk_u90j8zkHaBtMw0oqLZnqwicLAM"
+
 
 #De utvalgte byene og deres geografiske koordinater
 cities = {
@@ -46,7 +50,7 @@ for city, (lat, lon) in cities.items():
             "Dominerende forurensning": index["dominantPollutant"]
         })
     else:
-        print(f"❌ Feil for {city}: {response.status_code}")
+        print(f"Feil for {city}: {response.status_code}")
         results.append({
             "By": city,
             "AQI": None,
