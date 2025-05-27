@@ -10,7 +10,14 @@ import warnings
 warnings.filterwarnings('ignore')
 
 def load_city_data(city_name):
-    """Load data for a specific city"""
+    """Load data for a specific city
+    
+    Args:
+        city_name (str): Name of the city to load data for
+        
+    Returns:
+        pd.DataFrame or None: DataFrame with city pollution data, or None if file not found
+    """
     try:
         filepath = f"data/clean/byer/{city_name.lower()}_clean.csv"
         df = pd.read_csv(filepath)
@@ -26,7 +33,15 @@ def load_city_data(city_name):
         return None
 
 def analyze_single_city(df, city_name):
-    """Analyze trends and patterns for a single city"""
+    """Analyze trends and patterns for a single city
+    
+    Args:
+        df (pd.DataFrame): DataFrame containing city pollution data
+        city_name (str): Name of the city being analyzed
+        
+    Returns:
+        list: List of available pollutants in the dataset
+    """
     
     # Basic statistics
     print(f"Number of measurements: {len(df)}")
@@ -36,7 +51,7 @@ def analyze_single_city(df, city_name):
         print(f"Time span: {time_span.days} days")
     
     # Pollution components analysis
-    pollutants = ['pm2_5', 'no2', 'o3', 'so2', 'co', 'nh3']
+    pollutants = ['pm2_5', 'pm10', 'no2', 'o3', 'so2', 'co', 'nh3']
     available_pollutants = [p for p in pollutants if p in df.columns and df[p].notna().any()]
     
     if available_pollutants:
@@ -52,7 +67,27 @@ def analyze_single_city(df, city_name):
     return available_pollutants
 
 def perform_ml_analysis(df, city_name, pollutants):
-    """Perform machine learning analysis with chronological train/test split"""
+    """Perform machine learning analysis with chronological train/test split
+    
+    Args:
+        df (pd.DataFrame): DataFrame containing city pollution data with datetime column
+        city_name (str): Name of the city being analyzed
+        pollutants (list): List of available pollutant column names
+        
+    Returns:
+        dict or None: Dictionary containing model results and data for plotting, or None if analysis fails
+            - model: Trained LinearRegression model
+            - target: Target pollutant name
+            - features: List of feature column names used
+            - train_data: Training data DataFrame
+            - test_data: Test data DataFrame
+            - y_train: Training target values
+            - y_test: Test target values
+            - y_train_pred: Training predictions
+            - y_test_pred: Test predictions
+            - test_r2: R² score on test set
+            - test_rmse: RMSE on test set
+    """
     
     if len(pollutants) < 2:
         return None
@@ -130,7 +165,15 @@ def perform_ml_analysis(df, city_name, pollutants):
      }
 
 def create_prediction_plot(ml_results, city_name):
-    """Create a plot showing actual vs predicted values with time series"""
+    """Create a plot showing actual vs predicted values with time series
+    
+    Args:
+        ml_results (dict): Dictionary containing ML analysis results from perform_ml_analysis()
+        city_name (str): Name of the city being analyzed
+        
+    Returns:
+        None: Displays matplotlib plots
+    """
     
     train_data = ml_results['train_data']
     test_data = ml_results['test_data']
@@ -171,7 +214,16 @@ def create_prediction_plot(ml_results, city_name):
     plt.show()
 
 def visualize_city_trends(df, city_name, pollutants):
-    """Create comprehensive visualizations for a city"""
+    """Create comprehensive visualizations for a city
+    
+    Args:
+        df (pd.DataFrame): DataFrame containing city pollution data
+        city_name (str): Name of the city being analyzed
+        pollutants (list): List of available pollutant column names
+        
+    Returns:
+        None: Displays matplotlib plots with time series trends for up to 4 pollutants
+    """
     
     if not pollutants:
         print(f"No pollutant data available for {city_name}")
@@ -234,7 +286,14 @@ def visualize_city_trends(df, city_name, pollutants):
 
 
 def compare_cities(city_data):
-    """Compare pollution levels across the three cities"""
+    """Compare pollution levels across the three cities
+    
+    Args:
+        city_data (dict): Dictionary with city names as keys and DataFrames as values
+        
+    Returns:
+        None: Displays matplotlib plots and prints summary table comparing cities
+    """
     
     
     # Combine all city data
@@ -336,7 +395,14 @@ def compare_cities(city_data):
     print(summary_df.to_string(index=False))
 
 def main():
-    """Main function to run the analysis"""
+    """Main function to run the analysis
+    
+    Args:
+        None
+        
+    Returns:
+        None: Executes complete analysis pipeline for Milano, Grenoble, and København
+    """
     
     # Define the three exchange cities
     cities = ['Milano', 'Grenoble', 'København']
