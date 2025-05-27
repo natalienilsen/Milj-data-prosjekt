@@ -61,9 +61,9 @@ Manglende data ble behandlet med dropna() før plot.
 
 - Vi implementerte her en prediktiv modell basert på lineær regresjon med mål om å forutsi fremtidige nivåer av luftforurensning. Dette ble representert ved AQI basert på miljødata hentet fra tidligere renset CSV-fil.
 
-Manglende verdier ble visualisert ved heatmap og søylediagram for å vurdere omfanget. Deretter ble de håndtert ved å fulle med kolonnenes gjennomsnitt.
+Manglende verdier ble håndtert ved rensing av data, slik at modellen vår alltid opererte på gyldige verdier.
 
-Kategori-variabler ble gjort numeriske ved hjelp av one-hot encoding.
+Kategori-variabler trengte vi ikke forholde oss til da vi så på hver by isolert - om man ønsker å lage en felles modell for flere byer vil man kunne bruke byen som feature ved å one-hot encode den. 
 
 Datene ble deretter delt inn i trenings- og testsett, og modellen ble så trent og evaluert ved hjelp av R² og RMSE.
 
