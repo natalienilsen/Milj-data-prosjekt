@@ -5,7 +5,6 @@ import os
 import numpy as np
 import plotly.express as px  
 
-
 def laste_data(filepath):
     #Laster inn fildata
     
@@ -125,6 +124,11 @@ def lag_grafer(df):
         plt.show()
     
 
+if __name__ == "__main__":
+    filepath = input("Skriv inn filsti til CSV-filen: ").strip()
+    df = laste_data(filepath)
+    if df is not None:
+        lag_grafer(df)
 
             
 
