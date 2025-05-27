@@ -64,7 +64,6 @@ link: https://www.eea.europa.eu/en/analysis/maps-and-charts/up-to-date-air-quali
 
 * Dataen inneholder enkelte mangler og ulogiske verdier, og må derfor renses før analyse.
 
-
 NILU
 
 - Timesdata/aggregerbar
@@ -73,15 +72,12 @@ NILU
 - Rådata (målinger)
 - Norske byer
 
-
 OpenWeather
 
 - Timesdata (siste 5 dager)
 - API
 - Historikk
 - Utvalgte byer
-
-
 
 ### **DATAINNSAMLING**
 

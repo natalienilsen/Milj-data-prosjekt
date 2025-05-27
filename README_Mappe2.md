@@ -63,7 +63,7 @@ Manglende data ble behandlet med dropna() før plot.
 
 Manglende verdier ble håndtert ved rensing av data, slik at modellen vår alltid opererte på gyldige verdier.
 
-Kategori-variabler trengte vi ikke forholde oss til da vi så på hver by isolert - om man ønsker å lage en felles modell for flere byer vil man kunne bruke byen som feature ved å one-hot encode den. 
+Kategori-variabler trengte vi ikke forholde oss til da vi så på hver by isolert - om man ønsker å lage en felles modell for flere byer vil man kunne bruke byen som feature ved å one-hot encode den.
 
 Datene ble deretter delt inn i trenings- og testsett, og modellen ble så trent og evaluert ved hjelp av R² og RMSE.
 
@@ -102,7 +102,7 @@ Vi har laget enhetstester v.h.a unittest slik som beskrevet i pensum. Testene er
 
 Her dekker testene både positive og negative scenarier.
 
-Vi har samlet alle testene i en Jupyter Notebook under /test for å kunne kjøre testene én og én. 
+Vi har samlet alle testene i en Jupyter Notebook under /test for å kunne kjøre testene én og én.
 
 ##### Testfiler:
 
