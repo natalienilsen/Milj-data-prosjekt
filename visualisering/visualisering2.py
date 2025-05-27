@@ -106,7 +106,7 @@ def lag_grafer(df):
     # 1. Søylediagram: Gjennomsnittlig forurensning per kommune
     if "zone" in df.columns: 
         plt.figure(figsize=(10, 5))
-        sns.barplot(data=df, x="municipality", y="value", estimator=np.mean, color="seagreen")
+        sns.barplot(data=df, x="municipality", y="value", estimator=np.mean, errorbar=None, color="seagreen")
         plt.title("Gjennomsnittlig forurensningsnivå per kommune")
         plt.xticks(rotation=45)
         plt.ylabel("Verdi (µg/m³)")
@@ -124,28 +124,6 @@ def lag_grafer(df):
         plt.tight_layout()
         plt.show()
     
-    # 3. Plotly 
-    #denne får jeg ikke til å kjøre
-    if "zone" in df.columns: 
-        df["fromtime"] = pd.to_datetime(df["fromtime"])
-
-        # Filtrer ut ugyldige målinger (valgfritt)
-        df = df[df["value"] > 0]
-
-        # Interaktiv graf: velg kommune og komponent
-        fig = px.line(
-            df,
-            x="fromtime",
-            y="value",
-            color="component",
-            facet_col="municipality",
-            title="Luftkvalitet over tid per kommune og komponent",
-            labels={"value": "Verdi (µg/m³)", "fromtime": "Tid"},
-            height=600)
-        fig.update_layout(
-            legend_title_text='Komponent',
-            margin=dict(l=40, r=40, t=80, b=40))
-        fig.show()
 
 
             

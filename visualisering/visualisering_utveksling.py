@@ -5,49 +5,73 @@ import os
 import numpy as np
 import plotly.express as px 
 
+def compare_exchange_cities():
+    """Sammenligner byene som hver i gruppen er på utveksling i"""
+    
+    # --- LESER DATA ---
+    df_kobenhavn = pd.read_csv("data/clean/byer/københavn_clean.csv")
+    df_grenoble = pd.read_csv("data/clean/byer/grenoble_clean.csv")
+    df_milano = pd.read_csv("data/clean/byer/milano_clean.csv")
 
-#I denne filen sammenligner vi byene som hver i gruppen er på utveksling i 
+    # --- LEGGER INN BYNAVN --- 
+    df_kobenhavn["by"] = "København"
+    df_grenoble["by"] = "Grenoble"
+    df_milano["by"] = "Milano"
 
-# --- LESER DATA ---
-df_kobenhavn = pd.read_csv("/Users/vildevikane/Desktop/Milj-data-prosjekt/data/clean/kobenhagen_clean.csv")
-df_grenoble = pd.read_csv("/Users/vildevikane/Desktop/Milj-data-prosjekt/data/clean/grenoble_clean.csv")
-df_milano = pd.read_csv("/Users/vildevikane/Desktop/Milj-data-prosjekt/data/clean/milano_clean.csv")
+    # --- KOMBINERER DATA TIL ÉN DATAFRAME --- 
+    df = pd.concat([df_kobenhavn, df_grenoble, df_milano])
 
-# --- LEGGER INN BYNAVN --- 
-df_kobenhavn["by"] = "København"
-df_grenoble["by"] = "Grenoble"
-df_milano["by"] = "Milano"
+    # --- KONVERTERER TID ---
+    df["datetime"] = pd.to_datetime(df["datetime"])
 
-# --- KOMBINERER DATA TIL ÉN DATAFRAME --- 
-df = pd.concat([df_kobenhavn, df_grenoble, df_milano])
+    # --- SAMMENLIGNER PM2.5 --- 
+    if "pm2_5" in df.columns:
+        plt.figure(figsize=(12, 6))
+        for by in df["by"].unique():
+            subset = df[df["by"] == by]
+            plt.plot(subset["datetime"], subset["pm2_5"], label=by)
 
-# --- KONVERTERER TID ---
-df["datetime"] = pd.to_datetime(df["datetime"])
+        plt.title("Sammenligning av PM2.5-nivåer i tre byer")
+        plt.xlabel("Tid")
+        plt.ylabel("PM2.5 (μg/m³)")
+        plt.legend()
+        plt.tight_layout()
+        plt.show()
 
-# --- SAMMENLIGNER PM2.5 --- 
-if "pm2_5" in df.columns:
-    plt.figure(figsize=(12, 6))
-    for by in df["by"].unique():
-        subset = df[df["by"] == by]
-        plt.plot(subset["datetime"], subset["pm2_5"], label=by)
+    return df
 
-    plt.title("Sammenligning av PM2.5-nivåer i tre byer")
-    plt.xlabel("Tid")
-    plt.ylabel("PM2.5 (μg/m³)")
-    plt.legend()
+def create_correlation_heatmap(df=None):
+    """Lager heatmap for korrelasjon mellom forurensningskomponenter"""
+    
+    if df is None:
+        # Last inn data hvis ikke gitt
+        df_kobenhavn = pd.read_csv("data/clean/byer/københavn_clean.csv")
+        df_grenoble = pd.read_csv("data/clean/byer/grenoble_clean.csv")
+        df_milano = pd.read_csv("data/clean/byer/milano_clean.csv")
+        
+        df_kobenhavn["by"] = "København"
+        df_grenoble["by"] = "Grenoble"
+        df_milano["by"] = "Milano"
+        
+        df = pd.concat([df_kobenhavn, df_grenoble, df_milano])
+
+    # --- HEATMAP ---
+    # Velg relevante numeriske kolonner for korrelasjon
+    subset = df[["co", "no", "no2", "o3", "so2", "pm2_5", "pm10", "nh3"]]
+
+    # Beregn korrelasjonsmatrisen
+    corr = subset.corr()
+
+    # Lag heatmap
+    plt.figure(figsize=(6, 5))
+    sns.heatmap(corr, annot=True, cmap="Blues", fmt=".2f")
+    plt.title("Korrelasjon mellom forurensningskomponentene")
     plt.tight_layout()
     plt.show()
+    
+    return corr
 
-# --- HEATMAP ---
-# Velg relevante numeriske kolonner for korrelasjon
-subset = df[["co", "no", "no2", "o3", "so2", "pm2_5", "pm10", "nh3"]]
-
-# Beregn korrelasjonsmatrisen
-corr = subset.corr()
-
-# Lag heatmap
-plt.figure(figsize=(6, 5))
-sns.heatmap(corr, annot=True, cmap="Blues", fmt=".2f")
-plt.title("Korrelasjon mellom forurensningskomponentene")
-plt.tight_layout()
-plt.show()
+if __name__ == "__main__":
+    # Kjør funksjonene hvis filen kjøres direkte
+    df = compare_exchange_cities()
+    create_correlation_heatmap(df)
